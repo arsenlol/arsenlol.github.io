@@ -1,0 +1,53 @@
+<!doctype HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="img/basket.png">
+	<title>Awesome shopping cart</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="popup-bg">
+		<div class="popup">
+			<span id="close">close</span>
+			<div class="basket-content">
+				<div class="basket-header">
+					<div class="pt">product</div>
+					<div class="pt cntr">quantity</div>
+					<div class="pt cntr">price</div>
+				</div>
+				<ul id="basket"></ul>
+				<div id="buy">buy</div>
+				<div class="sum">Summary: <span>4,038,648 $</span></div>
+			</div>
+			<div id="success">
+				<p>thank you for purchase !</p>
+				<div id="complete">close</div>
+			</div>	
+		</div>
+	</div>
+	<header>
+		<h1>awesome shopping cart</h1>
+		<div id="min-basket">
+			<h2>cart items <span class="min-basket-quan">0</span></h2>
+		</div>
+	</header>
+	<div class='main'>
+		<div class="filter-wrap">
+			<div class="search">
+				<input id="search" type="text">
+			</div>
+			<div class="sort-box">sort by:
+				<select id="sort">
+					<option>cost</option>
+					<option>name</option>
+				</select>
+			</div>
+		</div>
+		<div class="catalog"></div>
+	</div>
+	<script type="text/javascript" src="data.json"></script>
+	<script src="main.js"></script>
+</body>
+</html>
